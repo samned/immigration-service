@@ -1,0 +1,44 @@
+### GET ALL
+GET http://localhost:8080/api/v1
+
+###My GET
+GET http://localhost:8080/api/v1/search?firstName=ABEBAYEHU
+
+
+
+### CREATE APPOINTMENT
+POST http://localhost:8080/api/v1
+Content-Type: application/json
+
+{
+  "appointmentId": "ABC1227",
+  "firstName": "ANDINET",
+  "middleName": "ARATENET",
+  "lastName": "AMESTENET"
+}
+
+
+
+
+
+
+### OWNER AND BLOG
+POST http://localhost:8080/owner/saveOwner
+Content-Type: application/json
+
+{
+  "name": "Samuel A",
+  "email": "samuelabebayehu@gmail.com",
+  "blogList": [
+    {
+      "title": "Data Structures and algorithm",
+      "category": "JAVA",
+      "content": "The first blog"
+    },
+    {
+      "title": "Data Structures and algorithm2",
+      "category": "JAVA2",
+      "content": "The first blog2"
+    }
+  ]
+}
